@@ -18,7 +18,7 @@ class TCXParser:
 
     def hr_values(self):
         return [
-            int(x.text)
+            float(x.text)
             for x in self.root.xpath(
                 "//ns:HeartRateBpm/ns:Value", namespaces={"ns": namespace}
             )
